@@ -1,1 +1,114 @@
-{"current":{"sections":{"header":{"type":"header","settings":{}},"162546481754c94abc":{"type":"hero","settings":{"image":"shopify:\/\/shop_images\/the-sun-sets-through-a-thick-evening-fog.jpg","title":"Example heading","description":"<p>Example paragraph<\/p>","button_label":"Shop Now","button_link":"https:\/\/marketplace.visualstudio.com\/items?itemName=killalau.vscode-liquid-snippets"}},"162546866243679e74":{"type":"featured-collection","settings":{"featured_collection":"frontpage","title":"Featured Collection"}},"page-faq-template":{"type":"page-faq-template","blocks":{"7268b31c-dbb6-482b-a1ee-2e187f3d9ed5":{"type":"faq","settings":{"title":"FAQ Title Example","answer":"<p>answer<\/p>"}},"ecacbfda-43b5-4146-b9fd-6415e558864e":{"type":"faq","settings":{"title":"FAQ Title Example2","answer":"<p>answer<\/p>"}}},"block_order":["7268b31c-dbb6-482b-a1ee-2e187f3d9ed5","ecacbfda-43b5-4146-b9fd-6415e558864e"],"settings":{}},"sidebar":{"type":"sidebar","blocks":{"b6cfac97-2c39-4696-a166-cddba77b41b6":{"type":"image","settings":{"title":"Sidebar Title","image":"shopify:\/\/shop_images\/yoga-anjali-mudra.jpg","url":"https:\/\/development-store-barcelona.myshopify.com\/blogs\/news\/post-3"}},"df74474f-b223-4427-b62f-4dcba0616d8b":{"type":"text","settings":{"title":"Sidebar Title Text","description":"<p>text<\/p>"}}},"block_order":["b6cfac97-2c39-4696-a166-cddba77b41b6","df74474f-b223-4427-b62f-4dcba0616d8b"],"settings":{}},"footer-section":{"type":"footer-section","blocks":{"afc7254d-2365-47dd-9740-3923c721eaea":{"type":"link_list","settings":{"title":"Quick Links","menu":"main-menu"}},"6523e5fb-f273-47ee-9dae-39d69a586d19":{"type":"text","settings":{"logo":"shopify:\/\/shop_images\/the-sun-sets-through-a-thick-evening-fog.jpg","title":"Store Information","description":"<p>description<\/p>"}}},"block_order":["afc7254d-2365-47dd-9740-3923c721eaea","6523e5fb-f273-47ee-9dae-39d69a586d19"],"settings":{"col_num":3}}},"content_for_index":["162546481754c94abc","162546866243679e74"]},"presets":{"Default":{}}}
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+        }
+      },
+      "162546481754c94abc": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/the-sun-sets-through-a-thick-evening-fog.jpg",
+          "title": "Example heading",
+          "description": "<p>Example paragraph<\/p>",
+          "button_label": "Shop Now",
+          "button_link": "https:\/\/marketplace.visualstudio.com\/items?itemName=killalau.vscode-liquid-snippets"
+        }
+      },
+      "162546866243679e74": {
+        "type": "featured-collection",
+        "settings": {
+          "featured_collection": "frontpage",
+          "title": "Featured Collection"
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "7268b31c-dbb6-482b-a1ee-2e187f3d9ed5": {
+            "type": "faq",
+            "settings": {
+              "title": "FAQ Title Example",
+              "answer": "<p>answer<\/p>"
+            }
+          },
+          "ecacbfda-43b5-4146-b9fd-6415e558864e": {
+            "type": "faq",
+            "settings": {
+              "title": "FAQ Title Example2",
+              "answer": "<p>answer<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "7268b31c-dbb6-482b-a1ee-2e187f3d9ed5",
+          "ecacbfda-43b5-4146-b9fd-6415e558864e"
+        ],
+        "settings": {
+        }
+      },
+      "sidebar": {
+        "type": "sidebar",
+        "blocks": {
+          "b6cfac97-2c39-4696-a166-cddba77b41b6": {
+            "type": "image",
+            "settings": {
+              "title": "Sidebar Title",
+              "image": "shopify:\/\/shop_images\/yoga-anjali-mudra.jpg",
+              "url": "https:\/\/development-store-barcelona.myshopify.com\/blogs\/news\/post-3"
+            }
+          },
+          "df74474f-b223-4427-b62f-4dcba0616d8b": {
+            "type": "text",
+            "settings": {
+              "title": "Sidebar Title Text",
+              "description": "<p>text<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "b6cfac97-2c39-4696-a166-cddba77b41b6",
+          "df74474f-b223-4427-b62f-4dcba0616d8b"
+        ],
+        "settings": {
+        }
+      },
+      "footer-section": {
+        "type": "footer-section",
+        "blocks": {
+          "afc7254d-2365-47dd-9740-3923c721eaea": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "main-menu"
+            }
+          },
+          "6523e5fb-f273-47ee-9dae-39d69a586d19": {
+            "type": "text",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/the-sun-sets-through-a-thick-evening-fog.jpg",
+              "title": "Store Information",
+              "description": "<p>description<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "afc7254d-2365-47dd-9740-3923c721eaea",
+          "6523e5fb-f273-47ee-9dae-39d69a586d19"
+        ],
+        "settings": {
+          "col_num": 3
+        }
+      }
+    },
+    "content_for_index": [
+      "162546481754c94abc",
+      "162546866243679e74"
+    ]
+  },
+  "presets": {
+    "Default": {
+    }
+  }
+}
