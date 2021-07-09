@@ -1,0 +1,91 @@
+<!-- /templates/customers/addresses.liquid -->
+
+<div class="container my-5">
+  <h1 class="lead">Addresses</h1>
+  <button class="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#newAddressModal">
+    Add Address
+  </button>
+  <div class="row row-cols-md-2 rows-cols-1 my-5 gx-2">
+    {% for address in customer.addresses  %}
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            {{ address | format_address }}
+          </div>
+          <div class="card-footer">
+            <form
+                action="/account/addresses/{{ address.id }}"
+                method="post"
+                data-confirm-message="Delete Address"
+            >
+              <input type="hidden" name="_method" value="delete">
+              <button class="btn btn-danger">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="modal fade" id="newAddressModal" tabindex="-1" aria-labelledby="newAddressModalLabel" aria-hidden="true">
+  {% form 'customer_address', customer.new_address %}
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add New Address</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12 mb-3">
+            <label class="form-label" for="first_name">First Name</label>
+            <input class="form-control" type="text" value="{{ form.first_name }}" name="address[first_name]" size="30" />
+          </div>
+          <div class="col-12 mb-3">
+            <label class="form-label" for="last_name">Last Name</label>
+            <input class="form-control" type="text" value="{{ form.last_name }}" name="address[last_name]" size="30" />
+          </div>
+          <div class="col-12 mb-3">
+            <label class="form-label" for="company">Company</label>
+            <input class="form-control" type="text" value="{{ form.company }}" name="address[company]" />
+          </div>
+          <div class="col-12 mb-3">
+            <label class="form-label" for="address1">Address</label>
+            <input class="form-control" type="text" value="{{ form.address1 }}" name="address[address1]" />
+          </div>
+          <div class="col-12 mb-3">
+            <label class="form-label" for="address2">Apartment</label>
+            <input class="form-control" type="text" value="{{ form.address2 }}" name="address[address2]" />
+          </div>
+          <div class="row mb-3">
+            <div class="col-12 col-md-4 mb-3">
+              <label class="form-label" for="city">City</label>
+              <input class="form-control" type="text" value="{{ form.city }}" name="address[city]" />
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <label class="form-label" for="country">Country</label>
+              <select class="form-control" name="address[country]"  id="AddressCountryNew">
+                {{ all_country_option_tags }}
+              </select>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <label class="form-label" for="province">Province</label>
+              <select id="AddressProvinceNew" class="form-control"  name="address[province]" disabled></select>
+            </div>
+          </div>
+          <div class="col-12 mb-3">
+            <label class="form-label" for="zip">Zip/Post Code</label>
+            <input class="form-control" type="text" value="{{ form.zip }}" name="address[zip]" />
+          </div>
+          <div class="col-12 mb-3">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-control" type="text" value="{{ form.phone }}" name="address[phone]" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" type="submit">Create Address</button>
+        </div>
+      </div>
+    </div>
+  {% endform %}
+</div>
